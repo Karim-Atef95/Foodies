@@ -1,0 +1,186 @@
+<body>
+<nav class="navbar navbar-expand-lg navbar-light grayColor container-fluid">    
+    <div class="inner-container d-flex">
+        <!-- left starts-->
+        <div class="left-wrapper d-flex justify-content-start">
+            <a class="navbar-brand" href="#">MyFoodies</a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-strava" viewBox="0 0 16 16">
+                <path d="M6.731 0 2 9.125h2.788L6.73 5.497l1.93 3.628h2.766L6.731 0zm4.694 9.125-1.372 2.756L8.66 9.125H6.547L10.053 16l3.484-6.875h-2.112z"/>
+              </svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- left ends -->
+        <!-- right starts -->
+        <div class="right-wrapper collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+                <a class="nav-link active" aria-current="page" href="#">Offers</a>
+                <a class="nav-link" href="#">Become a partner</a>
+                <a class="nav-link" href="#">All restaurants</a>
+                <button class="nav-link btn border-1 border-dark" href="#">Logout</button>
+            </div>
+        </div>
+        <!-- right ends -->
+    </div>
+</nav>
+<!-- order starts  -->
+<div class="order container-fluid">
+
+    <div class="orderFixedContainer d-flex justify-content-center align-content-center">
+
+        <div class="order-header d-flex flex-column">
+            <p style="text-align: center;">Order food online in Egypt</p>
+            <div class="inputandbutton d-flex justify-content-center ">
+                <select class="form-select order-input" aria-label="Default select example">
+                </select>
+                <button 
+                (click)="onClickGps()"
+                class="location">
+                    
+                </button>
+    
+            </div>
+
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7402315739487!2d31.339876622355018!3d30.044309525626613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e89486df2e9a413!2zMzDCsDAyJzM5LjUiTiAzMcKwMjAnMTUuNyJF!5e0!3m2!1sar!2seg!4v1674300435116!5m2!1sar!2seg" width="100%" 
+            height="100%" 
+            style="border:0; " 
+            allowfullscreen="" 
+            loading="lazy" 
+            [ngClass]="{none:mapStatus==='hide'}"  referrerpolicy="no-referrer-when-downgrade">
+        </iframe> 
+
+        </div>
+    </div>
+</div>
+<!-- order ends -->
+<!-- sections starts  -->
+<div class="card-container container-fluid d-flex justify-content-center">
+<!-- card 1 starts-->
+<div class="card" style="width: 400px;height:200px;">
+    <div class="row g-0"  style="height:200px">
+      <div class="col-md-6">
+        <img src="https://www.rockrecipes.com/wp-content/uploads/2016/04/Mongolian-Beef-close-up.jpg.webp" class="rounded-start" 
+        style="max-width: 100%; height:200px"
+         alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">Beef</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card 1 ends-->
+<!-- card 1 starts (2)-->
+<div class="card" style="width: 400px; max-height:200px;">
+    <div class="row g-0"  style="max-height:200px">
+      <div class="col-md-6">
+        <img src="https://www.recipetineats.com/wp-content/uploads/2018/09/Honey-Garlic-Chicken-Breast_7.jpg" class="rounded-start" 
+        style="width: 100%; max-height:200px"
+         alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">Chicken</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card 1 ends (2)-->
+
+    <!-- card 3 starts-->
+<div class="card" style="width: 400px; height:200px;">
+    <div class="row g-0" style="height:200px">
+      <div class="col-md-6">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=768,574" class="rounded-start" style="height:200px; max-width:100%" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">Cheese</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card 3 ends-->
+</div>
+<!-- sections ends -->
+<!-- footer starts -->
+<div class="footer container-fluid">
+<!-- first footer starts -->
+<div class="first-footer-container container-fluid d-flex justify-content-between">
+    <h5 class="f-f-label-1">Careers</h5>
+    <h5 class="f-f-label">Terms and conditions</h5>
+    <h5 class="f-f-label">FAQ</h5>
+    <h5 class="f-f-label">Privacy Policy</h5>
+    <h5 class="f-f-label">Contact Us</h5>
+    <h5 class="f-f-label-6">Sitemap</h5>
+
+</div>
+<hr class="hz-line">
+
+<!-- first footer ends -->
+<!-- second footer starts  -->
+<div class="second-footer-container d-flex justify-content-start">
+
+    <h5 class="s-f-label">Restaurants</h5>
+    <h5 class="s-f-label">Popular Cuisines</h5>
+    <h5 class="s-f-label">Popular Areas</h5>
+    <h5 class="s-f-label">Cities</h5>
+    <h5 class="s-f-label">Follow us on</h5>
+</div>
+<!-- second footer ends  -->
+<!-- third footer starts  -->
+<div class="third-footer-container d-flex justify-conent-start">
+    <div class="third-footer-inner-container">
+        <h5 class="t-f-label">Taboon</h5>
+        <h5 class="t-f-label"> Planet Africa</h5>
+        <h5 class="t-f-label">Al Aseel El Demashky</h5>
+        <h5 class="t-f-label">Lan Yuan - Maadi</h5>
+        <h5 class="t-f-label">Alsawy</h5>
+    </div> 
+    <div class="third-footer-inner-container">
+        <h5 class="t-f-label"> Mexican</h5>
+        <h5 class="t-f-label"> Sandwiches</h5>
+        <h5 class="t-f-label">Japanese</h5>
+        <h5 class="t-f-label">Italian</h5>
+        <h5 class="t-f-label"> Pizza</h5>
+    </div> 
+    <div class="third-footer-inner-container">
+        <h5 class="t-f-label">Masaken El Rehab</h5>
+        <h5 class="t-f-label">Hommeyat</h5>
+        <h5 class="t-f-label">Salah ElDin Street</h5>
+        <h5 class="t-f-label">Salah Nessim Street</h5>
+        <h5 class="t-f-label">Shabab El Mosalas</h5>
+    </div> 
+    <div class="third-footer-inner-container">
+        <h5 class="t-f-label">6th of October</h5>
+        <h5 class="t-f-label">Alexandria</h5>
+        <h5 class="t-f-label">Assiut</h5>
+        <h5 class="t-f-label">Banha</h5>
+        <h5 class="t-f-label">Cairo</h5>
+    </div> 
+</div>
+
+
+
+<!-- <div class="third-footer-container d-flex flex-column">
+    <h5 class="s-f-label">Taboon</h5>
+    <h5 class="s-f-label">Planet Africa</h5>
+    <h5 class="s-f-label">Al Aseel El Demashky</h5>
+    <h5 class="s-f-label">Lan Yuan - Maadi</h5>
+    <h5 class="s-f-label">Alsawy</h5>
+</div> -->
+
+<!-- third footer ends  -->
+</div>
+<!-- footer ends -->
+</body>
